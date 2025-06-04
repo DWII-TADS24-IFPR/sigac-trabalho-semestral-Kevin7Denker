@@ -14,16 +14,7 @@
             <div class="hidden md:flex md:items-center md:space-x-6 no-underline">
                 @switch($role)
                 @case('aluno')
-                <x-nav-link :href="route('aluno.dashboard')" :active="request()->routeIs('aluno.dashboard*')"
-                    class="text-white no-underline">
-                    {{ __('Painel do Aluno') }}
-                </x-nav-link>
-                <x-nav-link :href="route('aluno.declaracao.pdf')" class="text-white no-underline">
-                    {{ __('Gerar Declaração PDF') }}
-                </x-nav-link>
-                <x-nav-link :href="route('aluno.documentos.create')" class="text-white no-underline">
-                    {{ __('Submeter Documento') }}
-                </x-nav-link>
+
                 @break
                 @case('coordenador')
                 @break
